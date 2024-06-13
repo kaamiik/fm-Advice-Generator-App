@@ -1,17 +1,10 @@
-$ff-sans: "Lato", sans-serif;
-$ff-serif: "Abril Fatface", sans-serif;
+$ff-sans: "Manrope", sans-serif;
 
 $ff-base: $ff-sans;
-$ff-accent: $ff-serif;
 
 $font-sizes: (
-  900: clamp(2.5rem, 0.5rem + 10vw, 5rem),
-  800: clamp(2.5rem, 0.5rem + 7vw, 3.75rem),
-  600: clamp(1.4rem, 0.5rem + 3vw, 1.6875rem),
-  500: 1.3125rem,
-  400: 1.125rem,
-  300: 1rem,
+  600: clamp(1.5rem, 1.412rem + 0.3756vi, 1.75rem),
+  100: clamp(0.6875rem, 0.6435rem + 0.1878vi, 0.8125rem),
 );
 
-$fw-400: 400;
-$fw-700: 700;
+$fw-800: 800;

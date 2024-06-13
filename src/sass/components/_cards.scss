@@ -2,6 +2,11 @@
 
 .card {
   display: grid;
-  gap: 1rem;
-  padding: $card-body-padding;
+  padding-block-start: $card-block-start-padding;
+  padding-inline: $card-inline-padding;
+  border-radius: 10px;
+
+  @include mq(small) {
+    border-radius: 15px;
+  }
 }

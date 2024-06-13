@@ -7,7 +7,3 @@
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
 }
-
-.container[data-type="wide"] {
-  --max-width: #{$container-max-width-wide};
-}

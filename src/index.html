@@ -2,11 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
     <script type="module" src="/main.js"></script>
-    <title>Vite App</title>
     <link rel="stylesheet" href="/sass/main.scss" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="container">
+        <div class="card | bg-neutral-600 box-shadow-5">
+          <h1 class="visually-hidden">Advice Generator App</h1>
+          <p class="fs-100 clr-primary-400 letter-spacing uppercase">
+            Advice #<span aria-live="polite" class="advice-id"></span>
+          </p>
+
+          <blockquote
+            aria-live="polite"
+            class="quote | margin-block-start-24"
+          ></blockquote>
+
+          <picture>
+            <source
+              srcset="./assets/pattern-divider-desktop.svg"
+              media="(min-width: 24rem)"
+            />
+            <img
+              class="divider-margin mx-auto"
+              src="assets/pattern-divider-mobile.svg"
+              alt=""
+            />
+          </picture>
+
+          <button class="button" aria-label="Generate new advice">
+            <img src="assets/icon-dice.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="fs-100 text-center">
+      Challenge by
+      <a
+        class="clr-primary-400"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="clr-primary-400" href="#">Kamran Kiani</a>.
+    </footer>
+  </body>
 </html>

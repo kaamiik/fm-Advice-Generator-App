@@ -2,8 +2,14 @@
 
 body {
   font-family: $ff-base;
-  font-weight: $fw-400;
-  font-size: fs(400);
-  color: clr(neutral, 400);
+  font-weight: $fw-800;
+  font-size: fs(600);
+  color: clr(neutral, 300);
+  background-color: clr(neutral, 900);
   line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
 }
